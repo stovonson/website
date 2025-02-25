@@ -30,6 +30,7 @@ bun create astro@latest -- --template RATIU5/zaggonaut
 - Fully accessible
 - Fully responsive
 - Type-safe
+- SEO-friendly
 
 ## Customization
 
