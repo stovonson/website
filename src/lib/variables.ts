@@ -10,6 +10,7 @@ export const GLOBAL = {
   // Social media links
   githubProfile: "https://github.com/RATIU5/zaggonaut",
   twitterProfile: "https://twitter.com/",
+  linkedinProfile: "https://www.linkedin.com/",
   
   // Common text names used throughout the site
   articlesName: "Articles",
