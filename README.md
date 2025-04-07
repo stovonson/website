@@ -9,18 +9,12 @@ Zaggonaut is a retro-inspired theme for Astro, built using TypeScript, TailwindC
 Alternatively, you can create a new Astro project with Zaggonaut like this:
 
 ```bash
-# npm
-npm create astro@latest -- --template RATIU5/zaggonaut
-
 # pnpm
 pnpm create astro@latest --template RATIU5/zaggonaut
-
-# yarn
-yarn create astro --template RATIU5/zaggonaut
-
-# bun
-bun create astro@latest -- --template RATIU5/zaggonaut
 ```
+
+> [!IMPORTANT]  
+> Currently, `pnpm` is the only supported package manager due to `npm` throwing peer-dependency conflicts.
 
 ## Features
 
