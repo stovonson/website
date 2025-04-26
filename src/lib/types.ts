@@ -38,7 +38,7 @@ export type ProjectFrontmatter = {
 
   /**
    * The URL of the project on the website
-   * (eg. https://zaggonaut.dev/projects/my-project)
+   * (eg. https://stovonson.dev/projects/my-project)
    */
   filename: string;
 };
@@ -77,7 +77,7 @@ export type ArticleFrontmatter = {
 
   /**
    * The URL of the article on the website
-   * (eg. https://zaggonaut.dev/blog/my-article)
+   * (eg. https://stovonson.dev/blog/my-article)
    */
   filename: string;
 };

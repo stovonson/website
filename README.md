@@ -1,16 +1,16 @@
-![Zaggonaut, a retro-inspired theme for Astro.](./images/README.png)
+![stovonson, a retro-inspired theme for Astro.](./images/README.png)
 
-Zaggonaut is a retro-inspired theme for Astro, built using TypeScript, TailwindCSS, and of course, Astro.
+stovonson is a retro-inspired theme for Astro, built using TypeScript, TailwindCSS, and of course, Astro.
 
 ## Getting Started
 
-[View the demo](https://zaggonaut.dev) or [view the source code](https://github.com/RATIU5/zaggonaut).
+[View the demo](https://stovonson.dev) or [view the source code](https://github.com/RATIU5/stovonson).
 
-Alternatively, you can create a new Astro project with Zaggonaut like this:
+Alternatively, you can create a new Astro project with stovonson like this:
 
 ```bash
 # pnpm
-pnpm create astro@latest --template RATIU5/zaggonaut
+pnpm create astro@latest --template RATIU5/stovonson
 ```
 
 > [!IMPORTANT]  
@@ -34,7 +34,7 @@ The entire theme is fully customizable. The theme is setup a specific way to mak
 
 You can customize the colors of the theme by editing the `src/styles/global.css` file.
 This file uses Tailwind CSS and CSS variables to customize the colors of the theme.
-Zaggonaut uses the following CSS variables:
+stovonson uses the following CSS variables:
 
 - `--color-zag-dark`: The dark color of the theme
 - `--color-zag-light`: The light color of the theme
@@ -55,7 +55,7 @@ For example, you can change the `username` variable to your own username and eve
 ```typescript
 export const GLOBAL = {
   // Site metadata
-  username: "zaggonaut-fan123",
+  username: "stovonson-fan123",
 
   // ...
 
@@ -73,4 +73,4 @@ export const GLOBAL = {
 
 ## Ready To Try?
 
-Check out [the theme website](https://zaggonaut.dev) to give it a spin!
+Check out [the theme website](https://stovonson.dev) to give it a spin!

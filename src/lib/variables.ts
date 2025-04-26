@@ -2,18 +2,20 @@
 
 export const GLOBAL = {
   // Site metadata
-  username: "Zaggonaut",
-  rootUrl: "https://zaggonaut.dev",
-  shortDescription: "Retro-Inspired Theme &<br /> Built for Astro",
-  longDescription: "Zaggonaut is a retro-inspired theme for Astro, built using TypeScript, TailwindCSS, and Astro.",
+  username: "stovonson",
+  rootUrl: "https://stovonson.in",
+  shortDescription: "Hi! I make stuff.",
+  longDescription: "Hi! I make Cookpot, Stovetop and other stuff.",
   
   // Social media links
-  githubProfile: "https://github.com/RATIU5/zaggonaut",
-  twitterProfile: "https://twitter.com/",
-  linkedinProfile: "https://www.linkedin.com/",
+  kofiProfile: "https://ko-fi.com/stovonson",
+  bskyProfile: "https://bsky.app/profile/stovonson.in",
+  githubProfile: "https://github.com/stovonson",
+  modrinthProfile: "https://modrinth.com/user/stovonson",
+  discordProfile: "https://discord.gg/srC7Fs659R",
   
   // Common text names used throughout the site
-  articlesName: "Articles",
+  articlesName: "Blog",
   projectsName: "Projects",
   viewAll: "View All",
   
@@ -22,22 +24,23 @@ export const GLOBAL = {
   noProjects: "No featured projects yet.",
 
   // Blog metadata
-  blogTitle: "My Thoughts & Takes",
-  blogShortDescription: "Practical wisdom, unfiltered thoughts, and hot takes.",
-  blogLongDescription: "Web development, tech trends, and the occasional programming mishap.",
+  blogTitle: "Delve",
+  blogShortDescription: "Delve is stovonson's blog.",
+  blogLongDescription: "Delve is my blog where I write things about the internet and me.",
 
   // Project metadata
-  projectTitle: "Projects and Code",
+  projectTitle: "Stump",
   projectShortDescription: "A list of my web development projects and developer tools.",
   projectLongDescription: "All of my projects, including both frontend and full-stack applications.",
 
   // Profile image
-  profileImage: "michael-dam-unsplash.webp",
+  profileImage: "stovonson.png",
 
   // Menu items
   menu: {
     home: "/",
     projects: "/projects",
     blog: "/blog",
+    about: "/about",
   }
 };
