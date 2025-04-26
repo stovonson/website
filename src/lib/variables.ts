@@ -34,7 +34,7 @@ export const GLOBAL = {
   projectLongDescription: "All of my projects, including both frontend and full-stack applications.",
 
   // Profile image
-  profileImage: "/public/stovonson.png",
+  profileImage: "stovonson.png",
 
   // Menu items
   menu: {
