@@ -12,10 +12,10 @@ const { featuredArticles } = Astro.props;
 ---
 
 <div class="flex justify-between items-center w-full">
-  <h3 class="font-display text-lg sm:text-xl leading-loose">{GLOBAL.articlesName}</h3>
+  <h2 class="text-3xl sm:text-3xl font-display leading-loose">{GLOBAL.articlesName}</h2>
   <Anchor url="/blog" class="text-base">{GLOBAL.viewAll}</Anchor>
 </div>
-<ul class="my-8">
+<ul class="my-4">
   {
     (featuredArticles.length === 0 && <p>{GLOBAL.noArticles}</p>) ||
       featuredArticles.map((article) => (

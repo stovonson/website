@@ -4,7 +4,7 @@ title: Issue 3 - New site, new blog.
 description: Issue 3 of Delve.
 tags: ["updates"]
 time: 5
-featured: false
+featured: true
 timestamp: 2025-04-27 00:15
 filename: issue3
 ---
