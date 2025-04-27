@@ -13,6 +13,7 @@ export const GLOBAL = {
   githubProfile: "https://github.com/stovonson",
   modrinthProfile: "https://modrinth.com/user/stovonson",
   discordProfile: "https://discord.gg/srC7Fs659R",
+  matrixProfile: "https://matrix.to/#/#stovonsons:matrix.org",
   
   // Common text names used throughout the site
   articlesName: "Blog",
