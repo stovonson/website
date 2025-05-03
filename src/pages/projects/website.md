@@ -2,7 +2,7 @@
 layout: ../../layouts/ProjectLayout.astro
 title: Website
 description: This is my website. It was made with Astro, TS and Tailwind.
-tags: ["astro", "tailwind", "typescript", "website", "open-source"]
+tags: ["Astro", "Tailwind", "TS", "Website"]
 githubUrl: https://github.com/stovonson/website
 liveUrl: https://stovonson.in
 timestamp: 2025-04-26

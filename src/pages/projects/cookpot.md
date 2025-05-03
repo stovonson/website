@@ -2,7 +2,7 @@
 layout: ../../layouts/ProjectLayout.astro
 title: Cookpot
 description: Cookpot is the customizable Markdown template for anything.
-tags: ["HTML", "CSS", "js", "website", "open-source"]
+tags: ["HTML", "CSS", "JS", "Website"]
 githubUrl: https://github.com/stovonson/cookpot
 liveUrl: https://cookpot.top
 timestamp: 2025-04-21
