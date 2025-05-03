@@ -2,7 +2,7 @@
 
 export const GLOBAL = {
   // Site metadata
-  username: "stovonson",
+  username: "Stovonson",
   rootUrl: "https://stovonson.in",
   shortDescription: "Hi! I make stuff.",
   longDescription: "Hi! I make Cookpot, Stovetop and other stuff.",
@@ -46,10 +46,10 @@ export const GLOBAL = {
 
   // Menu items
   menu: {
-    home: "/",
-    projects: "/projects",
-    mods: "/mods",
-    blog: "/blog",
-    about: "/about",
+    Home: "/",
+    Projects: "/projects",
+    Mods: "/mods",
+    Blog: "/blog",
+    About: "/about",
   }
 };
