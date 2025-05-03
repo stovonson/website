@@ -8,10 +8,12 @@ export type Props = {
   url: string;
   duration?: string;
   timestamp?: string;
+  featured?: boolean;
 };
 
-const { title, description, url, duration, timestamp } = Astro.props;
+const { title, description, url, duration, timestamp, featured } = Astro.props;
 ---
+
 
 <div class="zag-text zag-transition flex flex-col gap-3 pb-8">
   <Anchor url={url} class="text-xl">

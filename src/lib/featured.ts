@@ -46,6 +46,7 @@ export const featuredArticles = (
         };
       },
     ))
+  .filter((article) => article.featured)
     .sort((a, b) => {
       const dateA = new Date(a.timestamp);
       const dateB = new Date(b.timestamp);
