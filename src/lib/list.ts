@@ -1,4 +1,4 @@
-import type { ArticleFrontmatter, ProjectFrontmatter } from "./types";
+import type { ArticleFrontmatter, ProjectFrontmatter, ModFrontmatter } from "./types";
 import { getShortDescription, processContentInDir } from "./utils";
 
 export const articles = (
@@ -49,3 +49,22 @@ export const projects = (
   const dateB = new Date(b.timestamp);
   return dateB.getTime() - dateA.getTime();
 });
+
+export const mods = (
+  await processContentInDir<ModFrontmatter, ModFrontmatter>(
+    "mods",
+    (data) => {
+      const shortDescription = getShortDescription(
+        data.frontmatter.description,
+      );
+      return {
+        title: data.frontmatter.title,
+        description: shortDescription,
+        tags: data.frontmatter.tags,
+        featured: data.frontmatter.featured,
+        filename: `/mods/${data.frontmatter.filename}`,
+        modrinthUrl: data.frontmatter.modrinthUrl,
+      };
+    },
+  )
+);

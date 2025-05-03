@@ -81,3 +81,37 @@ export type ArticleFrontmatter = {
    */
   filename: string;
 };
+
+export type ModFrontmatter = {
+  /**
+   * The title of the mod
+   */
+  title: string;
+
+  /**
+   * The description of the mod
+   */
+  description: string;
+
+  /**
+   * The tags of the mod
+   * (eg. ["JavaScript", "React", "Node.js"])
+   */
+  tags?: string[];
+
+  /**
+   * The Modrinth URL of the mod
+   */
+  modrinthUrl?: string;
+
+  /**
+   * Whether the project should be featured on the homepage
+   */
+  featured?: boolean;
+
+  /**
+   * The URL of the project on the website
+   * (eg. https://stovonson.dev/projects/my-project)
+   */
+  filename: string;
+};

@@ -19,7 +19,7 @@ type MarkdownData<T extends object> = {
  * @returns a promise that resolves to an array of processed content
  */
 export const processContentInDir = async <T extends object, K>(
-  contentType: "projects" | "blog",
+  contentType: "projects" | "blog" | "mods",
   processFn: (data: MarkdownData<T>) => K,
   dir: string = process.cwd(),
 ) => {
@@ -28,7 +28,7 @@ export const processContentInDir = async <T extends object, K>(
     .filter((file: string) => file.endsWith(".md"))
     .map((file) => file.split(".")[0]);
   const readMdFileContent = async (file: string) => {
-    if (contentType === "projects") {
+    if (contentType === "projects" ) {
       const content = import.meta
         .glob(`/src/pages/projects/*.md`)
         [`/src/pages/projects/${file}.md`]();
@@ -38,10 +38,21 @@ export const processContentInDir = async <T extends object, K>(
         url: string;
       };
       return processFn(data);
-    } else {
+    } else if (contentType === "blog") {
       const content = import.meta
         .glob(`/src/pages/blog/*.md`)
         [`/src/pages/blog/${file}.md`]();
+      const data = (await content) as {
+        frontmatter: T;
+        file: string;
+        url: string;
+      };
+      return processFn(data);
+    } else {
+      const content = import.meta
+        .glob(`/src/pages/mods/*.md`)
+
+        [`/src/pages/mods/${file}.md`]();
       const data = (await content) as {
         frontmatter: T;
         file: string;
@@ -86,7 +97,7 @@ export const processArticleDate = (timestamp: string) => {
  */
 export const generateSourceUrl = (
   sourceUrl: string,
-  contentType: "projects" | "blog",
+  contentType: "projects" | "blog" | "mod",
 ) => {
   return `${GLOBAL.rootUrl}/${contentType}/${sourceUrl}`;
 };

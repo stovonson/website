@@ -1,0 +1,55 @@
+---
+import { GLOBAL } from "../../lib/variables";
+import Layout from "../../layouts/Layout.astro";
+import ModSnippet from "../../components/ModSnippet.astro";
+import Section from "../../components/common/Section.astro";
+import { mods } from "../../lib/list";
+
+---
+
+<Layout>
+  <Fragment slot="head">
+    <title>{GLOBAL.modsTitle} • {GLOBAL.username}</title>
+    <meta
+      name="description"
+      content={GLOBAL.modsLongDescription}
+    />
+    <meta property="og:title" content={`${GLOBAL.modsTitle} • ${GLOBAL.username}`} />
+    <meta
+      property="og:description"
+      content={GLOBAL.modsShortDescription}
+    />
+    <meta property="og:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
+    <meta property="og:url" content={`${GLOBAL.rootUrl}/mods`} />
+    <meta name="bsky:card" content="summary_large_image" />
+    <meta name="bsky:title" content={`${GLOBAL.modsTitle} • ${GLOBAL.username}`} />
+    <meta
+      name="bsky:description"
+      content={GLOBAL.modsShortDescription}
+    />
+    <meta name="bsky:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="language" content="English" />
+    <link rel="canonical" href={`${GLOBAL.rootUrl}/mods`} />
+  </Fragment>
+  <Section class="my-8">
+    <div class="flex items-center gap-4 pt-8 pb-16">
+      <h1 class="font-display text-3xl sm:text-4xl leading-loose">{GLOBAL.modsName}</h1>
+    </div>
+    <ul>
+      {
+        mods.map((mod) => (
+          <li>
+            <ModSnippet
+              title={mod.title}
+              description={mod.description}
+              url={`${mod.filename}`}
+              modrinthUrl={mod.modrinthUrl}
+              tags={mod.tags ?? []}
+            />
+          </li>
+        ))
+      }
+    </ul>
+  </Section>
+</Layout>

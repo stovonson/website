@@ -1,4 +1,4 @@
-import type { ArticleFrontmatter, ProjectFrontmatter } from "./types";
+import type { ArticleFrontmatter, ProjectFrontmatter, ModFrontmatter } from "./types";
 import { getShortDescription, processContentInDir } from "./utils";
 
 export const featuredProjects = (
@@ -45,11 +45,29 @@ export const featuredArticles = (
           filename: `/blog/${data.frontmatter.filename}`,
         };
       },
-    )
-  )
-    .filter((project) => project.featured)
+    ))
     .sort((a, b) => {
       const dateA = new Date(a.timestamp);
       const dateB = new Date(b.timestamp);
       return dateB.getTime() - dateA.getTime();
     });
+
+export const featuredMods = (
+    await processContentInDir<ModFrontmatter, ModFrontmatter>(
+      "mods",
+      (data) => {
+        const shortDescription = getShortDescription(
+          data.frontmatter.description,
+        );
+        return {
+          title: data.frontmatter.title,
+          description: shortDescription,
+          modrinthUrl: data.frontmatter.modrinthUrl,
+          tags: data.frontmatter.tags,
+          featured: data.frontmatter.featured,
+          filename: `/mods/${data.frontmatter.filename}`,
+        };
+      },
+    )
+  ).filter((mod) => mod.featured)
+

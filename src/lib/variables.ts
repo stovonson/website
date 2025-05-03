@@ -16,23 +16,30 @@ export const GLOBAL = {
   matrixProfile: "https://matrix.to/#/#stovonsons:matrix.org",
   
   // Common text names used throughout the site
-  articlesName: "Blog",
-  projectsName: "Projects",
+  articlesName: "Delve (blog)",
+  projectsName: "Stump (projects)",
+  modsName: "Branch (mods)",
   viewAll: "View All",
   
   // Common descriptions used throughout the site
   noArticles: "No featured articles yet.",
   noProjects: "No featured projects yet.",
+  noMods: "No featured mods yet.",
 
   // Blog metadata
-  blogTitle: "Delve",
+  blogTitle: "Delve (blog)",
   blogShortDescription: "Delve is stovonson's blog.",
   blogLongDescription: "Delve is my blog where I write things about the internet and me.",
 
   // Project metadata
-  projectTitle: "Stump",
+  projectTitle: "Stump (projects)",
   projectShortDescription: "A list of my web development projects and developer tools.",
   projectLongDescription: "All of my projects, including both frontend and full-stack applications.",
+
+  // Mods metadata
+  modsTitle: "Branch (mods)",
+  modsShortDescription: "All of my Minecraft projects.",
+  modsLongDescription: "All of my Minecraft modpacks, mods and plugins.",
 
   // Profile image
   profileImage: "/images/stovonson.png",
@@ -42,6 +49,7 @@ export const GLOBAL = {
     home: "/",
     projects: "/projects",
     blog: "/blog",
+    mods: "/mods",
     about: "/about",
   }
 };
