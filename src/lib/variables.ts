@@ -48,8 +48,8 @@ export const GLOBAL = {
   menu: {
     home: "/",
     projects: "/projects",
-    blog: "/blog",
     mods: "/mods",
+    blog: "/blog",
     about: "/about",
   }
 };
