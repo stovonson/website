@@ -1,9 +1,9 @@
-import type { ArticleFrontmatter, ProjectFrontmatter, ModFrontmatter } from "./types";
+import type { ArticleFrontmatter, SiteFrontmatter, ModFrontmatter } from "./types";
 import { getShortDescription, processContentInDir } from "./utils";
 
-export const featuredProjects = (
-  await processContentInDir<ProjectFrontmatter, ProjectFrontmatter>(
-    "projects",
+export const featuredSites = (
+  await processContentInDir<SiteFrontmatter, SiteFrontmatter>(
+    "sites",
     (data) => {
       const shortDescription = getShortDescription(
         data.frontmatter.description,
@@ -16,7 +16,7 @@ export const featuredProjects = (
         liveUrl: data.frontmatter.liveUrl,
         featured: data.frontmatter.featured,
         timestamp: data.frontmatter.timestamp,
-        filename: `/projects/${data.frontmatter.filename}`,
+        filename: `/sites/${data.frontmatter.filename}`,
       };
     },
   )

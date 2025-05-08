@@ -16,13 +16,13 @@ export const GLOBAL = {
   
   // Common text names used throughout the site
   articlesName: "Delve (blog)",
-  projectsName: "Stump (projects)",
+  sitesName: "Stump (sites)",
   modsName: "Branch (mods)",
   viewAll: "View All",
   
   // Common descriptions used throughout the site
   noArticles: "No featured articles yet.",
-  noProjects: "No featured projects yet.",
+  noSites: "No featured sites yet.",
   noMods: "No featured mods yet.",
 
   // Blog metadata
@@ -30,14 +30,14 @@ export const GLOBAL = {
   blogShortDescription: "Delve is stovonson's blog.",
   blogLongDescription: "Delve is my blog where I write things about the internet and me.",
 
-  // Project metadata
-  projectTitle: "Stump (projects)",
-  projectShortDescription: "A list of my web development projects and developer tools.",
-  projectLongDescription: "All of my projects, including both frontend and full-stack applications.",
+  // Site metadata
+  siteTitle: "Stump (sites)",
+  siteShortDescription: "A list of my web development sites and developer tools.",
+  siteLongDescription: "All of my sites, including both frontend and full-stack applications.",
 
   // Mods metadata
   modsTitle: "Branch (mods)",
-  modsShortDescription: "All of my Minecraft projects.",
+  modsShortDescription: "All of my Minecraft sites.",
   modsLongDescription: "All of my Minecraft modpacks, mods and plugins.",
 
   // Profile image
@@ -46,7 +46,7 @@ export const GLOBAL = {
   // Menu items
   menu: {
     Home: "/",
-    Projects: "/projects",
+    Sites: "/sites",
     Mods: "/mods",
     Commissions: "https://ko-fi.com/stovonson/commissions",
     Blog: "/blog",

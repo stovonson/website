@@ -1,4 +1,4 @@
-export type ProjectFrontmatter = {
+export type SiteFrontmatter = {
   /**
    * The title of the project
    */
@@ -32,13 +32,13 @@ export type ProjectFrontmatter = {
 
   /**
    * The date the project was created or started in W3C format
-   * (this will determine the sort order of the projects)
+   * (this will determine the sort order of the sites)
    */
   timestamp: string;
 
   /**
    * The URL of the project on the website
-   * (eg. https://stovonson.dev/projects/my-project)
+   * (eg. https://stovonson.dev/sites/my-project)
    */
   filename: string;
 };
@@ -111,7 +111,7 @@ export type ModFrontmatter = {
 
   /**
    * The URL of the project on the website
-   * (eg. https://stovonson.dev/projects/my-project)
+   * (eg. https://stovonson.dev/sites/my-project)
    */
   filename: string;
 };

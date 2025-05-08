@@ -1,4 +1,4 @@
-import type { ArticleFrontmatter, ProjectFrontmatter, ModFrontmatter } from "./types";
+import type { ArticleFrontmatter, SiteFrontmatter, ModFrontmatter } from "./types";
 import { getShortDescription, processContentInDir } from "./utils";
 
 export const articles = (
@@ -25,9 +25,9 @@ export const articles = (
   return dateB.getTime() - dateA.getTime();
 });
 
-export const projects = (
-  await processContentInDir<ProjectFrontmatter, ProjectFrontmatter>(
-    "projects",
+export const sites = (
+  await processContentInDir<SiteFrontmatter, SiteFrontmatter>(
+    "sites",
     (data) => {
       const shortDescription = getShortDescription(
         data.frontmatter.description,
@@ -40,7 +40,7 @@ export const projects = (
         liveUrl: data.frontmatter.liveUrl,
         featured: data.frontmatter.featured,
         timestamp: data.frontmatter.timestamp,
-        filename: `/projects/${data.frontmatter.filename}`,
+        filename: `/sites/${data.frontmatter.filename}`,
       };
     },
   )

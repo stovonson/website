@@ -1,10 +1,10 @@
 ---
-import { featuredArticles, featuredProjects, featuredMods } from "../lib/featured";
+import { featuredArticles, featuredSites, featuredMods } from "../lib/featured";
 import { GLOBAL } from "../lib/variables";
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/home/Hero.astro";
 import Section from "../components/common/Section.astro";
-import FeaturedProjects from "../components/home/FeaturedProjects.astro";
+import FeaturedSites from "../components/home/FeaturedSites.astro";
 import FeaturedArticles from "../components/home/FeaturedArticles.astro";
 import FeaturedMods from "../components/home/FeaturedMods.astro";
 ---
@@ -42,7 +42,7 @@ import FeaturedMods from "../components/home/FeaturedMods.astro";
     <Hero />
   </Section>
   <Section>
-    <FeaturedProjects featuredProjects={featuredProjects} />
+    <FeaturedSites featuredSites={featuredSites} />
   </Section>
   <Section>
     <FeaturedMods featuredMods={featuredMods} />

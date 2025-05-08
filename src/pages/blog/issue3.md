@@ -11,7 +11,7 @@ filename: issue3
 
 Hello! This is the third post on Delve, and I want to tell you about some improvements I've been making behind-the-scenes to make everything a lot more efficient.
 
-Recently, I've been making a lot of new projects, and I have used HTML, CSS and/or JS for all of them. But, although I'm very good at using them, I feel that I've had a few frustrations over the years with HTML. Specifically:
+Recently, I've been making a lot of new sites, and I have used HTML, CSS and/or JS for all of them. But, although I'm very good at using them, I feel that I've had a few frustrations over the years with HTML. Specifically:
 
 1. No reusable elements (footers, headers, etc.)
 2. Slow page loading (due to client)

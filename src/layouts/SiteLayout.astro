@@ -1,6 +1,6 @@
 ---
 import { getShortDescription, generateSourceUrl } from "../lib/utils";
-import type { ProjectFrontmatter } from "../lib/types";
+import type { SiteFrontmatter } from "../lib/types";
 import type { MarkdownLayoutProps } from "astro";
 import Prose from "../components/Prose.astro";
 import Layout from "./Layout.astro";
@@ -9,11 +9,11 @@ import Anchor from "../components/common/Anchor.astro";
 import { GLOBAL } from "../lib/variables";
 
 
-type Props = MarkdownLayoutProps<ProjectFrontmatter>;
+type Props = MarkdownLayoutProps<SiteFrontmatter>;
 
 const { frontmatter } = Astro.props;
 const shortDescription = getShortDescription(frontmatter.description);
-const sourceUrl = generateSourceUrl(frontmatter.filename, "projects");
+const sourceUrl = generateSourceUrl(frontmatter.filename, "sites");
 ---
 
 <Layout>

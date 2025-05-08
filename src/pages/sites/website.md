@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/ProjectLayout.astro
+layout: ../../layouts/SiteLayout.astro
 title: Website
 description: This is my website. It was made with Astro, TS and Tailwind.
 tags: ["Astro", "Tailwind", "TS", "Website"]
@@ -12,7 +12,7 @@ filename: website
 
 ## About the project
 
-This is my website. I use it as a base for my other projects, in terms of quality and theme. I also write on here and all of my projects are available on a neat little list.
+This is my website. I use it as a base for my other sites, in terms of quality and theme. I also write on here and all of my sites are available on a neat little list.
 
 ## Features
 
