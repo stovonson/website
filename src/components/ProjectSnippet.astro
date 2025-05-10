@@ -5,11 +5,13 @@ export type Props = {
   title: string;
   description: string;
   url: string;
+  githubUrl?: string;
+  liveUrl?: string;
   modrinthUrl?: string;
   tags: string[];
 };
 
-const { title, description, url, modrinthUrl, tags } = Astro.props;
+const { title, description, url, githubUrl, liveUrl, modrinthUrl, tags } = Astro.props;
 ---
 
 <div class="flex flex-col gap-3 pb-8">
@@ -18,6 +20,20 @@ const { title, description, url, modrinthUrl, tags } = Astro.props;
       {title}
     </Anchor>
     <div class="flex gap-2">
+      {
+        githubUrl ? (
+          <Anchor url={githubUrl} class="text-base" external>
+            GitHub
+          </Anchor>
+        ) : null
+      }
+      {
+        liveUrl ? (
+          <Anchor url={liveUrl} class="text-base" external>
+            Website
+          </Anchor>
+        ) : null
+      }
       {
         modrinthUrl ? (
           <Anchor url={modrinthUrl} class="text-base" external>

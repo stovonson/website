@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/SiteLayout.astro
+layout: ../../layouts/ProjectLayout.astro
 title: Cookpot
 description: Cookpot is the customizable Markdown template for anything.
 tags: ["HTML", "CSS", "JS", "Website"]

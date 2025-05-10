@@ -1,4 +1,4 @@
-export type SiteFrontmatter = {
+export type ProjectFrontmatter = {
   /**
    * The title of the project
    */
@@ -26,19 +26,24 @@ export type SiteFrontmatter = {
   liveUrl?: string;
 
   /**
+   * The Modrinth URL of the project (optional)
+   */
+  modrinthUrl?: string;
+
+  /**
    * Whether the project should be featured on the homepage
    */
   featured?: boolean;
 
   /**
    * The date the project was created or started in W3C format
-   * (this will determine the sort order of the sites)
+   * (this will determine the sort order of the projects)
    */
   timestamp: string;
 
   /**
    * The URL of the project on the website
-   * (eg. https://stovonson.dev/sites/my-project)
+   * (eg. https://stovonson.in/projects/my-project)
    */
   filename: string;
 };
@@ -77,41 +82,7 @@ export type ArticleFrontmatter = {
 
   /**
    * The URL of the article on the website
-   * (eg. https://stovonson.dev/blog/my-article)
-   */
-  filename: string;
-};
-
-export type ModFrontmatter = {
-  /**
-   * The title of the mod
-   */
-  title: string;
-
-  /**
-   * The description of the mod
-   */
-  description: string;
-
-  /**
-   * The tags of the mod
-   * (eg. ["JavaScript", "React", "Node.js"])
-   */
-  tags?: string[];
-
-  /**
-   * The Modrinth URL of the mod
-   */
-  modrinthUrl?: string;
-
-  /**
-   * Whether the project should be featured on the homepage
-   */
-  featured?: boolean;
-
-  /**
-   * The URL of the project on the website
-   * (eg. https://stovonson.dev/sites/my-project)
+   * (eg. https://stovonson.in/blog/my-article)
    */
   filename: string;
 };

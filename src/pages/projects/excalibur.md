@@ -1,9 +1,10 @@
 ---
-layout: ../../layouts/ModLayout.astro
+layout: ../../layouts/ProjectLayout.astro
 title: Excalibur
 description: The better way to play Forge.
 tags: ["Adventure", "Lightweight", "Optimization"]
 modrinthUrl: https://modrinth.com/modpack/excalibur-forge
+timestamp: 2025-03-27
 featured: false
 filename: excalibur
 ---

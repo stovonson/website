@@ -1,9 +1,10 @@
 ---
-layout: ../../layouts/ModLayout.astro
+layout: ../../layouts/ProjectLayout.astro
 title: Pure Black Menus
 description: High Contrast for older versions!
 tags: ["GUI", "Simplistic", "Themed"]
 modrinthUrl: https://modrinth.com/resourcepack/pure-black-menus
+timestamp: 2024-08-30
 featured: false
 filename: pureblackmenus
 ---

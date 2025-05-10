@@ -1,7 +1,7 @@
-// Set any item to undefined to remove it from the site or to use the default value
+// Set any item to undefined to remove it from the projects or to use the default value
 
 export const GLOBAL = {
-  // Site metadata
+  // Project metadata
   username: "Stovonson",
   rootUrl: "https://stovonson.in",
   shortDescription: "Hi! I make stuff.",
@@ -14,31 +14,24 @@ export const GLOBAL = {
   modrinthProfile: "https://modrinth.com/user/stovonson",
   discordProfile: "https://discord.gg/srC7Fs659R",
   
-  // Common text names used throughout the site
+  // Common text names used throughout the projects
   articlesName: "Delve (blog)",
-  sitesName: "Stump (sites)",
-  modsName: "Branch (mods)",
+  projectsName: "Stump (projects)",
   viewAll: "View All",
   
-  // Common descriptions used throughout the site
+  // Common descriptions used throughout the projects
   noArticles: "No featured articles yet.",
-  noSites: "No featured sites yet.",
-  noMods: "No featured mods yet.",
+  noProjects: "No featured projects yet.",
 
   // Blog metadata
   blogTitle: "Delve (blog)",
   blogShortDescription: "Delve is stovonson's blog.",
   blogLongDescription: "Delve is my blog where I write things about the internet and me.",
 
-  // Site metadata
-  siteTitle: "Stump (sites)",
-  siteShortDescription: "A list of my web development sites and developer tools.",
-  siteLongDescription: "All of my sites, including both frontend and full-stack applications.",
-
-  // Mods metadata
-  modsTitle: "Branch (mods)",
-  modsShortDescription: "All of my Minecraft sites.",
-  modsLongDescription: "All of my Minecraft modpacks, mods and plugins.",
+  // Project metadata
+  projectTitle: "Stump (projects)",
+  projectShortDescription: "A list of my web development projects and developer tools.",
+  projectLongDescription: "All of my projects, including both frontend and full-stack applications.",
 
   // Profile image
   profileImage: "/images/stovonson.png",
@@ -46,10 +39,9 @@ export const GLOBAL = {
   // Menu items
   menu: {
     Home: "/",
-    Sites: "/sites",
-    Mods: "/mods",
-    Commissions: "https://ko-fi.com/stovonson/commissions",
+    Projects: "/projects",
     Blog: "/blog",
     About: "/about",
+    Commissions: "https://ko-fi.com/stovonson/commissions",
   }
 };

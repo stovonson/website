@@ -19,7 +19,7 @@ type MarkdownData<T extends object> = {
  * @returns a promise that resolves to an array of processed content
  */
 export const processContentInDir = async <T extends object, K>(
-  contentType: "sites" | "blog" | "mods",
+  contentType: "projects" | "blog",
   processFn: (data: MarkdownData<T>) => K,
   dir: string = process.cwd(),
 ) => {
@@ -28,10 +28,10 @@ export const processContentInDir = async <T extends object, K>(
     .filter((file: string) => file.endsWith(".md"))
     .map((file) => file.split(".")[0]);
   const readMdFileContent = async (file: string) => {
-    if (contentType === "sites" ) {
+    if (contentType === "projects" ) {
       const content = import.meta
-        .glob(`/src/pages/sites/*.md`)
-        [`/src/pages/sites/${file}.md`]();
+        .glob(`/src/pages/projects/*.md`)
+        [`/src/pages/projects/${file}.md`]();
       const data = (await content) as {
         frontmatter: T;
         file: string;
@@ -42,17 +42,6 @@ export const processContentInDir = async <T extends object, K>(
       const content = import.meta
         .glob(`/src/pages/blog/*.md`)
         [`/src/pages/blog/${file}.md`]();
-      const data = (await content) as {
-        frontmatter: T;
-        file: string;
-        url: string;
-      };
-      return processFn(data);
-    } else {
-      const content = import.meta
-        .glob(`/src/pages/mods/*.md`)
-
-        [`/src/pages/mods/${file}.md`]();
       const data = (await content) as {
         frontmatter: T;
         file: string;
@@ -92,12 +81,12 @@ export const processArticleDate = (timestamp: string) => {
 /**
  * Generates a source URL for a content item. The URL is used in meta tags and social media cards.
  * @param sourceUrl the source URL of the content
- * @param contentType the type of content (either "sites" or "blog")
+ * @param contentType the type of content (either "projects" or "blog")
  * @returns a string representing the source URL with the appropriate domain
  */
 export const generateSourceUrl = (
   sourceUrl: string,
-  contentType: "sites" | "blog" | "mod",
+  contentType: "projects" | "blog",
 ) => {
   return `${GLOBAL.rootUrl}/${contentType}/${sourceUrl}`;
 };

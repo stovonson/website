@@ -1,9 +1,9 @@
-import type { ArticleFrontmatter, SiteFrontmatter, ModFrontmatter } from "./types";
+import type { ArticleFrontmatter, ProjectFrontmatter } from "./types";
 import { getShortDescription, processContentInDir } from "./utils";
 
-export const featuredSites = (
-  await processContentInDir<SiteFrontmatter, SiteFrontmatter>(
-    "sites",
+export const featuredProjects = (
+  await processContentInDir<ProjectFrontmatter, ProjectFrontmatter>(
+    "projects",
     (data) => {
       const shortDescription = getShortDescription(
         data.frontmatter.description,
@@ -14,13 +14,15 @@ export const featuredSites = (
         tags: data.frontmatter.tags,
         githubUrl: data.frontmatter.githubUrl,
         liveUrl: data.frontmatter.liveUrl,
+        modrinthUrl: data.frontmatter.modrinthUrl,
         featured: data.frontmatter.featured,
         timestamp: data.frontmatter.timestamp,
-        filename: `/sites/${data.frontmatter.filename}`,
+        filename: `/projects/${data.frontmatter.filename}`,
       };
     },
   )
 )
+  .filter((item): item is ProjectFrontmatter => item !== undefined)
   .filter((project) => project.featured)
   .sort((a, b) => {
     const dateA = new Date(a.timestamp);
@@ -46,29 +48,10 @@ export const featuredArticles = (
         };
       },
     ))
+  .filter((item): item is ArticleFrontmatter => item !== undefined)
   .filter((article) => article.featured)
     .sort((a, b) => {
       const dateA = new Date(a.timestamp);
       const dateB = new Date(b.timestamp);
       return dateB.getTime() - dateA.getTime();
     });
-
-export const featuredMods = (
-    await processContentInDir<ModFrontmatter, ModFrontmatter>(
-      "mods",
-      (data) => {
-        const shortDescription = getShortDescription(
-          data.frontmatter.description,
-        );
-        return {
-          title: data.frontmatter.title,
-          description: shortDescription,
-          modrinthUrl: data.frontmatter.modrinthUrl,
-          tags: data.frontmatter.tags,
-          featured: data.frontmatter.featured,
-          filename: `/mods/${data.frontmatter.filename}`,
-        };
-      },
-    )
-  ).filter((mod) => mod.featured)
-

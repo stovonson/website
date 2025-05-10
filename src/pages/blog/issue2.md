@@ -4,7 +4,7 @@ title: Issue 2 - My new project.
 description: Issue 2 of Delve.
 tags: ["updates"]
 time: 3
-featured: false
+featured: true
 timestamp: 2025-04-22 11:00
 filename: issue2
 ---

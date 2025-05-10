@@ -1,9 +1,10 @@
 ---
-layout: ../../layouts/ModLayout.astro
+layout: ../../layouts/ProjectLayout.astro
 title: ModernMC
 description: Modernized Minecraft.
 tags: ["Adventure", "Kitchen Sink", "Multiplayer"]
 modrinthUrl: https://modrinth.com/modpack/modernmc
+timestamp: 2024-10-05
 featured: false
 filename: modernmc
 ---

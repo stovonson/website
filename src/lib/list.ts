@@ -1,4 +1,4 @@
-import type { ArticleFrontmatter, SiteFrontmatter, ModFrontmatter } from "./types";
+import type { ArticleFrontmatter, ProjectFrontmatter } from "./types";
 import { getShortDescription, processContentInDir } from "./utils";
 
 export const articles = (
@@ -20,14 +20,15 @@ export const articles = (
     },
   )
 ).sort((a, b) => {
+  a = a!; b = b!;
   const dateA = new Date(a.timestamp);
   const dateB = new Date(b.timestamp);
   return dateB.getTime() - dateA.getTime();
 });
 
-export const sites = (
-  await processContentInDir<SiteFrontmatter, SiteFrontmatter>(
-    "sites",
+export const projects = (
+  await processContentInDir<ProjectFrontmatter, ProjectFrontmatter>(
+    "projects",
     (data) => {
       const shortDescription = getShortDescription(
         data.frontmatter.description,
@@ -38,33 +39,16 @@ export const sites = (
         tags: data.frontmatter.tags,
         githubUrl: data.frontmatter.githubUrl,
         liveUrl: data.frontmatter.liveUrl,
+        modrinthUrl: data.frontmatter.modrinthUrl,
         featured: data.frontmatter.featured,
         timestamp: data.frontmatter.timestamp,
-        filename: `/sites/${data.frontmatter.filename}`,
+        filename: `/projects/${data.frontmatter.filename}`,
       };
     },
   )
 ).sort((a, b) => {
+  a = a!; b = b!;
   const dateA = new Date(a.timestamp);
   const dateB = new Date(b.timestamp);
   return dateB.getTime() - dateA.getTime();
 });
-
-export const mods = (
-  await processContentInDir<ModFrontmatter, ModFrontmatter>(
-    "mods",
-    (data) => {
-      const shortDescription = getShortDescription(
-        data.frontmatter.description,
-      );
-      return {
-        title: data.frontmatter.title,
-        description: shortDescription,
-        tags: data.frontmatter.tags,
-        featured: data.frontmatter.featured,
-        filename: `/mods/${data.frontmatter.filename}`,
-        modrinthUrl: data.frontmatter.modrinthUrl,
-      };
-    },
-  )
-);

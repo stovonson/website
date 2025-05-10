@@ -1,9 +1,10 @@
 ---
-layout: ../../layouts/ModLayout.astro
+layout: ../../layouts/ProjectLayout.astro
 title: The Portal Modpack
 description: Portal in Minecraft!
 tags: ["Lightweight", "Magic", "Technology"]
 modrinthUrl: https://modrinth.com/modpack/the-portal-modpack
+timestamp: 2024-12-15
 featured: true
 filename: theportalmodpack
 ---

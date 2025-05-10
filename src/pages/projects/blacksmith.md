@@ -1,9 +1,10 @@
 ---
-layout: ../../layouts/ModLayout.astro
+layout: ../../layouts/ProjectLayout.astro
 title: Blacksmith
 description: Blacksmith is the best way to play with Forge.
 tags: ["Kitchen Sink", "Lightweight", "Optimization"]
 modrinthUrl: https://modrinth.com/modpack/blacksmith
+timestamp: 2024-09-15
 featured: true
 filename: blacksmith
 ---
