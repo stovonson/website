@@ -6,7 +6,7 @@ tags: ["HTML", "CSS", "JS", "Website"]
 githubUrl: https://github.com/stovonson/cookpot
 liveUrl: https://cookpot.top
 timestamp: 2025-04-21
-featured: true
+featured: false
 filename: cookpot
 ---
 
