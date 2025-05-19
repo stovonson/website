@@ -25,6 +25,8 @@ import "../styles/global.css";
     </main>
     <Footer />
     <script is:inline>
+      // Only load the Ko-Fi script if the path is not /links
+      if (window.location.pathname !== '/links') {
       // Load the Ko-Fi script dynamically
       const script = document.createElement('script');
       script.src = 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js';
@@ -37,6 +39,7 @@ import "../styles/global.css";
         });
       };
       document.body.appendChild(script);
+      }
     </script>
   </body>
 </html>

@@ -1,0 +1,40 @@
+---
+import { GLOBAL } from "../../lib/variables";
+import Layout from "../../layouts/Layout.astro";
+import Section from "../../components/common/Section.astro";
+import Hero from "../../components/home/Hero.astro";
+import Links from "../../components/common/Links.astro";
+---
+
+<Layout>
+  <Fragment slot="head">
+    <title>Support • {GLOBAL.username}</title>
+    <meta
+      name="description"
+      content={GLOBAL.longDescription}
+    />
+    <meta property="og:title" content={`About • ${GLOBAL.username}`} />
+    <meta
+      property="og:description"
+      content={GLOBAL.shortDescription}
+    />
+    <meta property="og:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
+    <meta property="og:url" content={`${GLOBAL.rootUrl}/about`} />
+    <meta name="bsky:card" content="summary_large_image" />
+    <meta name="bsky:title" content={`About • ${GLOBAL.username}`} />
+    <meta
+      name="bsky:description"
+      content={GLOBAL.shortDescription}
+    />
+    <meta name="bsky:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="language" content="English" />
+    <link rel="canonical" href={`${GLOBAL.rootUrl}/about`} />
+  </Fragment>
+  <Section class="my-4">
+    <Hero />
+  </Section>
+  <Section class="my-2">
+    <Links />
+  </Section>
+</Layout>

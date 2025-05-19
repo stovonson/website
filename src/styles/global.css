@@ -126,3 +126,34 @@
     font-variation-settings: "opsz" 72;
   }
 }
+
+.link-button {
+  padding: 10px;
+  border: 2px solid currentColor;
+  border-radius: 25px;
+  text-align: left;
+  position: relative;
+}
+
+.link-button-inv {
+  padding: 10px;
+  border-radius: 25px;
+  text-align: left;
+  background-color: var(--color-zag-dark);
+  color: var(--color-zag-light);
+  border-color: transparent;
+  position: relative;
+
+  :where(.dark, .dark *) & {
+    background-color: var(--color-zag-light);
+    color: var(--color-zag-dark);
+  }
+
+  svg {
+    fill: var(--color-zag-light);
+    
+    :where(.dark, .dark *) & {
+      fill: var(--color-zag-dark);
+    }
+  }
+}

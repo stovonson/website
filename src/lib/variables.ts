@@ -8,11 +8,11 @@ export const GLOBAL = {
   longDescription: "Hi! I make Cookpot, Stovetop and other stuff.",
   
   // Social media links
+  patreonProfile: "https://patreon.com/stovonson",
   kofiProfile: "https://ko-fi.com/stovonson",
+  youtubeProfile: "https://www.youtube.com/@stovonson",
   bskyProfile: "https://bsky.app/profile/stovonson.in",
   githubProfile: "https://github.com/stovonson",
-  modrinthProfile: "https://modrinth.com/user/stovonson",
-  discordProfile: "https://discord.gg/srC7Fs659R",
   
   // Common text names used throughout the projects
   articlesName: "Delve (blog)",
@@ -42,6 +42,6 @@ export const GLOBAL = {
     Projects: "/projects",
     Blog: "/blog",
     About: "/about",
-    Commissions: "https://ko-fi.com/stovonson/commissions",
+    Links: "/links",
   }
 };
