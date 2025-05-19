@@ -3,8 +3,8 @@ layout: ../../layouts/ProjectLayout.astro
 title: LITUK
 description: Free subdomains that say you know what a chippy is.
 tags: ["DNS", "Free", "Subdomains", "Website"]
-githubUrl: https://github.com/stovonson/website
-liveUrl: https://stovonson.in
+githubUrl: https://github.com/stovonson/lituk-register
+liveUrl: https://www.lives-in-the.uk
 timestamp: 2025-05-18
 featured: true
 filename: lituk
