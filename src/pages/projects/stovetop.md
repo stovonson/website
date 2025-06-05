@@ -4,7 +4,7 @@ title: Stovetop
 description: Useful websites I have found, put in a neat little list.
 tags: ["HTML", "CSS", "JS", "Website"]
 githubUrl: https://github.com/stovonson/oven
-liveUrl: https://thestove.top
+liveUrl: https://projects.stovonson.in/stovetop/index.html
 timestamp: 2025-04-22
 featured: true
 filename: stovetop

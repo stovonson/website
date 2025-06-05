@@ -8,7 +8,6 @@ export const GLOBAL = {
   longDescription: "Hi! I make Cookpot, Stovetop and other stuff.",
   
   // Social media links
-  patreonProfile: "https://patreon.com/stovonson",
   kofiProfile: "https://ko-fi.com/stovonson",
   youtubeProfile: "https://www.youtube.com/@stovonson",
   bskyProfile: "https://bsky.app/profile/stovonson.in",
@@ -34,7 +33,7 @@ export const GLOBAL = {
   projectLongDescription: "All of my projects, including both frontend and full-stack applications.",
 
   // Profile image
-  profileImage: "/images/stovonson.png",
+  profileImage: "/images/stovonson-pride.png",
 
   // Menu items
   menu: {
