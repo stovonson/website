@@ -160,4 +160,12 @@
   .dark .link-button-inv svg {
     fill: var(--color-zag-dark);
   }
+
+  .contact-button {
+    padding: 10px;
+    border: 2px solid currentColor;
+    border-radius: 25px;
+    text-align: left;
+    position: relative;
+  }
 }
