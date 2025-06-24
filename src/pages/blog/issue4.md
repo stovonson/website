@@ -21,7 +21,7 @@ The next example of change I've made is surrounding my social media. I used to b
 
 Obviously, this became too much, and since Feburary I've been cutting down on the amount of content I make, and making less, higher-quality stuff instead.
 
-This ranges from [modpacks](https://modrinth.com/user/stovonson), to [projects](https://stovonson.in/projects/) and [Beets (Bluesky posts)](https://bsky.app/profile/stovonson.in). Maybe in the future I'll make YouTube videos again, but for now I'll stick to my current setup.
+This ranges from [modpacks](https://modrinth.com/user/stovonson), to [projects](https://stovonson.in/projects/) and [Tweets](https://x.com/stovonsonX). Maybe in the future I'll make YouTube videos again, but for now I'll stick to my current setup.
 
 Oh yeah: I've got a new modpack coming out soon, [follow me on Modrinth](https://modrinth.com/user/stovonson) to keep up-to-date. I've also added all of my existing modpacks on here!
 

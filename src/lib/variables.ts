@@ -10,7 +10,7 @@ export const GLOBAL = {
   // Social media links
   kofiProfile: "https://ko-fi.com/stovonson",
   youtubeProfile: "https://www.youtube.com/@stovonson",
-  bskyProfile: "https://bsky.app/profile/stovonson.in",
+  xProfile: "https://x.com/stovonsonX",
   githubProfile: "https://github.com/stovonson",
   
   // Common text names used throughout the projects
